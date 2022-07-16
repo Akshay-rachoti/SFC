@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+*{
+  margin: 0%;
+  padding: 0%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hrContainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  border: 1px solid black;
+  width: 99.5vw;
+  height:99.5vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hrCont1{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: url("https://w0.peakpx.com/wallpaper/580/346/HD-wallpaper-slash-gnr-guns-legend-thumbnail.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hrCont2{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background: url("https://wallpaper.dog/large/20353041.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.hrCont3{
+  background: url("https://images.hdqwalls.com/wallpapers/guitar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hrCont4{
+  background: url("https://w0.peakpx.com/wallpaper/428/726/HD-wallpaper-music-heals-red-music-grey-abstract-guitars-thumbnail.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hrCont5{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: url("https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+  background-position: center;
+}
+.hrCont6{
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUJDsOtgpACqjq1DEzO8XyspG47BpSY8dxgg&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+.nacvBar{
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  height: 7vh;
+  background: rgba(255, 255, 255, 0.17);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.navheadng{
+  color: aqua;
+  position: absolute;
+  top: -4vh;
+  left: 1vw;
+}
+.navheadng::first-letter{
+  font-size: 4vw;
+  color: violet;
+}
+
+.navlogo{
+  position: absolute;
+  right: 10vw;
+  color: rgb(238, 10, 238);
+  font-size: 2vw;
+}
+
+.hrcrcle{
+  background-color: rgb(204, 243, 230);
+  height: 70vh;
+  width: 70vh;
+  position: absolute;
+  left: 35vw;
+  top: 20vh;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.inrCrcle1{
+  border:1px solid  red;
+  height: 70vh;
+  width: 70vh;
+  transform: scale(1%);
+  animation: innercrcle 1s   infinite  ;
+  position: absolute;
+  border-radius: 50%;
+}
+.inrCrcle2{
+  border:1px solid  black;
+  height: 70vh;
+  position: absolute;
+  width: 70vh;
+  border-radius: 50%;
+  transform: scale(1%);
+  animation: innercrcle 2s   infinite  ;
+  animation-play-state: paused;
+}
+.inrCrcle3{
+  border:1px solid  green;
+  height: 70vh;
+  transform: scale(1%);
+  animation: innercrcle 3s   infinite  ;
+  width: 70vh;
+  position: absolute;
+ }
+.crcbtn{
+  position: absolute;
+  height: 6vh;
+  width: 8vw;
+  border-radius: 5px;
+  outline: none;
+  border: none;
   color: white;
+  cursor: pointer;
+  top: 32vh;
+  left: 12vw;
+  background-color: red;
+  letter-spacing: 0.1vw;
 }
-
-.App-link {
-  color: #61dafb;
+.crcbtn:active{
+  transform: scale(1.1);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.reset{
+  top: 40vh;
+  background-color: rgb(255, 127, 238);
+}
+@keyframes innercrcle {
   to {
-    transform: rotate(360deg);
-  }
+      transform: scale(100%);}
+}
+.audio{
+  background-color: black;
+  height: 30vh;
+  width: 40vw;
 }
