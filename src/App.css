@@ -130,7 +130,7 @@
   position: absolute;
  }
 .crcbtn{
-  position: absolute;
+
   height: 6vh;
   width: 8vw;
   border-radius: 5px;
@@ -138,8 +138,6 @@
   border: none;
   color: white;
   cursor: pointer;
-  top: 32vh;
-  left: 12vw;
   background-color: red;
   letter-spacing: 0.1vw;
 }
@@ -150,6 +148,17 @@
   top: 40vh;
   background-color: rgb(255, 127, 238);
 }
+.btnhold{
+  position: absolute;
+  width: 30vw;
+  height: 10vh;
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+
+  top: 85vh;
+  left: 65vw;
+}
 @keyframes innercrcle {
   to {
       transform: scale(100%);}
@@ -158,4 +167,87 @@
   background-color: black;
   height: 30vh;
   width: 40vw;
+}
+
+
+/* media queries  */
+@media only screen and (max-width: 1284px) {
+  .hrcrcle{
+    left: 33vw;
+  }
+  .crcbtn{
+    left: 13vw;
+  }
+  .navheadng{
+  top: -3vh;
+  }
+  .navlogo{
+    top: 2vh;
+  }
+ 
+}
+@media only screen and (max-width: 1058px) {
+  .hrcrcle{
+    left: 30vw;
+  }
+  .crcbtn{
+    left: 13vw;
+  }
+  .navheadng{
+  top: -2vh;
+  font-size: larger;
+  }
+  .navlogo{
+    top: 1vh;
+    font-size: xx-large;
+  }
+ 
+}
+@media only screen and (max-width: 865px) {
+  .hrcrcle{
+    left: 25vw;
+  }
+  .crcbtn{
+    left: 13vw;
+    width: 10vw;
+  }
+  .navheadng{
+  top: -1vh;
+  font-size: larger;
+  }
+  .navlogo{
+    top: 1vh;
+    font-size: xx-large;
+  }
+ 
+}
+@media only screen and (max-width: 720px) {
+  .hrcrcle{
+    left: 20vw;
+  }
+  .crcbtn{
+    left: 13vw;
+    width: 15vw;
+  }
+  .navheadng{
+  top: 1vh;
+  font-size: larger;
+  }
+ 
+ 
+}
+@media only screen and (max-width: 585px) {
+  .hrcrcle{
+    left: 10vw;
+  }
+  .crcbtn{
+    left: 13vw;
+    width: 15vw;
+  }
+  .navheadng{
+  top: 1vh;
+  font-size: larger;
+  }
+ 
+ 
 }

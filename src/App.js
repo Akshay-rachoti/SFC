@@ -43,6 +43,7 @@ function App() {
   const miz = () => {
 
     if (i < arry.length) {
+      //perform operation on i for changing combinations of music or color
       let audio = new Audio(audios[i]);
       audio.play();
       document.getElementsByClassName("hrcrcle")[0].style.backgroundColor = arry[i];
@@ -76,9 +77,11 @@ function App() {
           <div className='inrCrcle inrCrcle1'></div>
           <div className=' inrCrcle inrCrcle2'></div>
           <div className='inrCrcle inrCrcle3'></div>
+          </div>
+          <div className='btnhold'>
           <input type="button" className='crcbtn starbtn' onClick={btnclk} value="Start"></input>
           <input type="button" style={{ display: 'none' }} onClick={resbtn} className='crcbtn reset' value="Reset"></input>
-        </div>
+          </div>
       </div>
     </Fragment>
   );
